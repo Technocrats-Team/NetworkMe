@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 .svg-position{
-    position: absolute;
+    /* position: absolute;
     top: 30%;
-    right: 23%;
+    right: 23%; */
     /* height: 200px; */
+    justify-content: end;
 }
 
-.userCard {
+.userCard > {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.45);
 }
 
