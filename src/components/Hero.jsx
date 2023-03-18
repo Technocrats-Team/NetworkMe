@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -12,7 +13,10 @@ const Hero = () => {
       Connect with like-minded professionals and expand your network.
     </p>
     <div className='flex mx-auto align-top'>
-    <button className='btn mx-4 border border-gray-500 px-4 py-2 rounded-lg'>Host</button>
+    <Link to="/register"> 
+    <button className='btn mx-4 border border-gray-500 px-4 py-2 rounded-lg' >Host</button>
+    </Link>
+   
     <button className='btn mx-4 border border-gray-500 px-4 py-2 rounded-lg'>Attend</button>
     </div>
     </div>
