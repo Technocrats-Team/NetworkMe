@@ -1,4 +1,5 @@
 import React from 'react';
+import { Rectangle } from '../assets';
 import { Formik, Field, FieldArray } from 'formik';
 
 const EventRegistrationForm = () => {
@@ -8,7 +9,7 @@ const EventRegistrationForm = () => {
 
   return (
     <div>
-      <h1>Event Registration Form</h1>
+      <img src={Rectangle} alt="" className="w-full max-w-xs mx-auto mb-8 " />
       <Formik
         initialValues={{
           eventName: '',
@@ -21,18 +22,18 @@ const EventRegistrationForm = () => {
         onSubmit={handleSubmit}
       >
         {({ values, handleSubmit, handleChange }) => (
-          <form onSubmit={handleSubmit}>
-            <label>
-              Event Name:
-              <Field type="text" name="eventName" />
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+            <label className="block mt-4">
+            <span className="text-gray-700">Event Name:</span>
+              <Field type="text" name="eventName" className="mt-1 block w-52 h-7 rounded-md border-[#988f8f] shadow-lg focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 w" />
             </label>
-            <label>
-              Event Date:
-              <Field type="date" name="eventDate" />
+            <label className="block mt-4">
+            <span className="text-gray-700">Event Date:</span>
+              <Field type="date" name="eventDate" className="mt-1 block w-52 h-7 rounded-md border-[#988f8f] shadow-lg focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" /> 
             </label>
-            <label>
+            <label className='block mt-4'>
               Event Location:
-              <Field type="text" name="eventLocation" />
+              <Field type="text" name="eventLocation" className="mt-1 block w-52 h-7 rounded-md border-gray-300 shadow-lg focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
             </label>
             <label>
               Event Description:

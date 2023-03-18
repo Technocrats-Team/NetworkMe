@@ -10,7 +10,7 @@ const AttendeeForm = () => {
 
   return (
     <div>
-      <h1>Attendee Form</h1>
+      <h1 className="text-4xl">Attendee Form</h1>
       <Formik
         initialValues={{
           name: "",
