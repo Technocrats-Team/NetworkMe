@@ -1,11 +1,20 @@
 import React from 'react'
+import Feature from './components/Feature'
+import Navbar from './components/Navbar'
+
+import Testimonials from './components/Testimonials'
+import Hero from './components/Hero'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <>
-    <strong className="text-2xl">
-      Alok Singh
-    </strong>
+    <Navbar />
+    <Hero />
+    <Feature />
+    <Testimonials />
+    <Footer />
+
     </>
   )
 }
