@@ -6,11 +6,11 @@ const EventPage = () => {
     <>
 
       <div className="flex justify-center">
-        <div class="bg-white rounded-lg shadow-lg p-6 w-[800px]">
-          <h2 class="text-2xl font-bold mb-4">Reckon 4.0</h2>
-          <p class="text-gray-600 text-sm mb-2">Date: September 1, 2022</p>
+        <div className="bg-white rounded-lg shadow-lg p-6 w-[800px]">
+          <h2 className="text-2xl font-bold mb-4">Reckon 4.0</h2>
+          <p className="text-gray-600 text-sm mb-2">Date: September 1, 2022</p>
           {/* <p class="text-gray-600 text-sm mb-4">Time: 6:00 PM - 9:00 PM</p> */}
-          <p class="text-gray-800 leading-relaxed mb-4">
+          <p className="text-gray-800 leading-relaxed mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             lacinia feugiat ipsum vel volutpat. Sed at massa euismod, faucibus
             mauris eget, scelerisque ex. Praesent vel lectus nulla. Vivamus
