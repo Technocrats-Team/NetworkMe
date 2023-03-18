@@ -3,14 +3,20 @@
 @tailwind utilities;
 
 .svg-position{
-    position: absolute;
+    /* position: absolute;
     top: 30%;
-    right: 23%;
+    right: 23%; */
     /* height: 200px; */
+    justify-content: end;
 }
 
+<<<<<<< HEAD
 .userCard {
     box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.35);
+=======
+.userCard > {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.45);
+>>>>>>> a540994441019634c517715f21c1272d308b9a9d
 }
 
 .sponsor-card  {
