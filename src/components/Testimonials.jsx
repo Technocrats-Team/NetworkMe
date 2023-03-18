@@ -4,6 +4,7 @@ import {images} from '../assets'
  
 const Testimonials = () => {
   return (
+<<<<<<< HEAD
     <>
   <h1 className='font-bold text-3xl text-center'>Testimonials</h1>
     <div className="flex flex-wrap">
@@ -30,6 +31,10 @@ const Testimonials = () => {
     </div>
     </>
   )
+=======
+    <div>Testimonials</div>
+  ) 
+>>>>>>> a0f221dbbdc5299e41a3f77202105f23990c5d05
 }
  
 export default Testimonials
