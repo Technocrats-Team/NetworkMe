@@ -18,10 +18,10 @@ const LandingPage = () => {
     <Hero />
     
     <FeaturePage />
-    <EventPage />
+     
     <Testimonials />
     <Footer />
-    <AttendeeForm />
+    
 
     </>
   )
