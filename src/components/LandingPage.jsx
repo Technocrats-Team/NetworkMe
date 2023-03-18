@@ -6,6 +6,7 @@ import Testimonials from '../components/Testimonials'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import EventPage from './EventPage.jsx'
+import AttendeeForm from './AttendeeForm.jsx'
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
     <EventPage />
     <Testimonials />
     <Footer />
+    <AttendeeForm />
 
     </>
   )
