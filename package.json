@@ -9,11 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "formik": "^2.2.9",
-=======
     "firebase": "^9.18.0",
->>>>>>> 66619f77394b7f56ed1b2eed6e302d1e626a3286
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0"
