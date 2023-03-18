@@ -7,18 +7,11 @@ import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import EventPage from './EventPage.jsx'
 import AttendeeForm from './AttendeeForm.jsx'
-import {auth , provider } from '../firebase'
-import { signInWithPopup } from 'firebase/auth'
+
 
 const LandingPage = () => {
-  const [value , setValue] = useState();
-  const handleClick =() => {
-    signInWithPopup(auth , provider).then((data) => {
-       setValue(data.user.email)
-       console.log(value)
-    }
-    )
-  }
+ 
+    
   return (
     <>
     <Navbar />

@@ -1,10 +1,27 @@
 import React from 'react';
 import { Rectangle } from '../assets';
 import { Formik, Field, FieldArray } from 'formik';
+import {initializeApp} from 'firebase/app';
+import { getDatabase, ref, push } from "firebase/database";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB2GxhRQGib6cRZPOEHo_EiyY2SBJJO1xM",
+  authDomain: "network-me-a73dd.firebaseapp.com",
+  databaseURL: "https://network-me-a73dd-default-rtdb.firebaseio.com",
+  projectId: "network-me-a73dd",
+  storageBucket: "network-me-a73dd.appspot.com",
+  messagingSenderId: "162661134430",
+  appId: "1:162661134430:web:295eefc3d6816b69eb04cf",
+  measurementId: "G-TF00N4Q4L7"
+};
 
 const EventRegistrationForm = () => {
   const handleSubmit = (values) => {
-    console.log(values);
+    const firebaseApp = initializeApp(firebaseConfig);
+    const db = getDatabase(firebaseApp);
+    const eventsRef = ref(db, 'event');
+    push(eventsRef, values); // Store the form data in the Firebase database
   };
 
   return (
