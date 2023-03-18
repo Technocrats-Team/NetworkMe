@@ -1,21 +1,21 @@
 import React from 'react'
-import Feature from './components/Feature'
-import Navbar from './components/Navbar'
+import LandingPage from './components/LandingPage'
+import EventRegForm from './components/EventRegForm'
+import Hero from './components/Hero';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Testimonials from './components/Testimonials'
-import Hero from './components/Hero'
-import Footer from './components/Footer'
+
+
 
 const App = () => {
   return (
-    <>
-    <Navbar />
-    <Hero />
-    <Feature />
-    <Testimonials />
-    <Footer />
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/register" element={<EventRegForm />} />
+        {/* <Route path="/event/:eventId" component={EventPage} /> */}
+      </Routes>
+    </BrowserRouter>
   )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import {random} from '../assets'
 
-const Feature = () => {
+const FeaturePage = () => {
   return (
     <div className="main    ">
         <strong>Our Features</strong>
@@ -32,4 +32,4 @@ const Feature = () => {
   )
 }
 
-export default Feature
+export default FeaturePage

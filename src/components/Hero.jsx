@@ -11,9 +11,9 @@ const Hero = () => {
       <p className='text-center mt-10 ml-24 text-xl  max-w-md'>
       <span className='text-[#5956E9]'>Connect</span > with <span className='text-[#5956E9]'>like-minded</span> professionals and expand your <span className='text-[#5956E9]'>network</span>.
     </p>
-      <div>
+      {/* <div>
         <img src={team} alt="" />
-      </div>
+      </div> */}
     <div class="  space-x-32 mt-8 mx-52">
   <button
     type="button"
