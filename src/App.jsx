@@ -1,21 +1,20 @@
 import React from 'react'
-import Feature from './components/Feature'
-import Navbar from './components/Navbar'
+import LandingPage from './components/LandingPage'
 
-import Testimonials from './components/Testimonials'
-import Hero from './components/Hero'
-import Footer from './components/Footer'
+
+
 
 const App = () => {
   return (
-    <>
-    <Navbar />
-    <Hero />
-    <Feature />
-    <Testimonials />
-    <Footer />
-
-    </>
+    <Router>
+    <div>
+      <Switch>
+        <Route exact path="/" component={LandingPage} />
+        <Route path="/register" component={EventRegForm} />
+        {/* <Route path="/event/:eventId" component={EventPage} /> */}
+      </Switch>
+    </div>
+  </Router>
   )
 }
 
