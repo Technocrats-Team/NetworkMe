@@ -29,8 +29,13 @@ const Testimonials = () => {
  
     </div>
     </>
+<<<<<<< HEAD
   );
   
 };
+=======
+  )
+}
+>>>>>>> fffc8708cd5bb8c08e4dfac50c0cf0a5c2114532
  
 export default Testimonials
