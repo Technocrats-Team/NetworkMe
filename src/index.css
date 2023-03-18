@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.svg-position{
+    position: absolute;
+    top: 30%;
+    right: 23%;
+    /* height: 200px; */
+}
+
+.userCard {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.45);
+}
+
+.sponsor-card  {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.45);
+    
+}
+
+.sponser{
+    left: 20%;
+}
