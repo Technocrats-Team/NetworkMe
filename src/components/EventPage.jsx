@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Photo , github } from "../assets";
 import UserCard from './UserCard';
 import OrganizerCard from './OrganizerCard';
+import SponsorTile from './SponsorTile';
 
 const EventPage = (props) => {
 
@@ -25,33 +26,35 @@ const EventPage = (props) => {
 
 
       <div className="flex justify-center">
-        <div className="bg-white rounded-lg shadow-lg p-6 w-[800px]">
-          <h2 className="text-2xl font-bold mb-4">{event.eventName}</h2>
-          <p className="text-gray-600 text-sm mb-2">Date: September 1, 2022</p>
-          {/* <p class="text-gray-600 text-sm mb-4">Time: 6:00 PM - 9:00 PM</p> */}
-          <p className="text-gray-800 leading-relaxed mb-4">
+        <div className="bg-white rounded-lg shadow-lg p-6 w-[80vw]">
+          <h2 className="text-4xl font-bold mb-4">{event.eventName}</h2>
+          <p className="text-gray-600 mb-2 text-2xl">Date: September 1, 2022</p>
+          
+          <p className="text-gray-800 leading-relaxed text-2xl mb-4">
            {event.eventDescription}
           </p>
-          {/* <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">Register Now</button> */}
+          
         </div>
       </div>
-      <h1 className="text-2xl sponser">Sponsers</h1>
-      <div className='flex justify-center items-center flex-wrap basis-2/6 gap-3'>
-      <UserCard  />
-      <UserCard  />
-      <UserCard  />
-      <UserCard  />
-      <UserCard  />
-      <UserCard  />
-      <UserCard  />
-      <UserCard  />
-      <UserCard  />
-      <UserCard  />
-      <UserCard  />
-      <UserCard  />
-      <UserCard  />
+      <h1 className="text-5xl text-center sponsor my-10">Sponsors</h1>
+
+      <div className="flex flex-col justify-center items-center gap-5">
+         <SponsorTile />
+         <SponsorTile />
+         <SponsorTile />
+        
       </div>
-<div className='flex justify-center items-center flex-wrap basis-2/6 gap-3'>
+      <h1 className='text-center text-4xl my-10'>Organizer</h1>
+      <div className='flex justify-center items-center flex-wrap basis-2/6 gap-3 w-[80vw] mx-auto'>
+      <UserCard  />
+      <UserCard  />
+      <UserCard  />
+      <UserCard  />
+    
+      
+      </div>
+      <h1 className='text-center text-4xl my-10'>Attendee</h1>
+      <div className='flex justify-center items-center flex-wrap basis-2/6 gap-3 w-[80vw] mx-auto'>
       <OrganizerCard  />
       <OrganizerCard  />
       <OrganizerCard  />
@@ -60,11 +63,7 @@ const EventPage = (props) => {
       <OrganizerCard  />
       <OrganizerCard  />
       <OrganizerCard  />
-      <OrganizerCard  />
-      <OrganizerCard  />
-      <OrganizerCard  />
-      <OrganizerCard  />
-      <OrganizerCard  />
+      
       </div>
     </>
   );

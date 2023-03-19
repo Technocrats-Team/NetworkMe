@@ -1,11 +1,11 @@
 import React from 'react'
-import { github , random } from '../assets'
+import { github , random, sponsor } from '../assets'
 
 const UserCard = () => {
   return (
     <>
-    <div className="flex flex-col w-[250px] h-[340px] justify-center items-center userCard gap-4 p-2 rounded-lg m-auto mt-5 ">
-      <img src={random} alt="" srcset="" className='profile-img w-[120px] h-[120px]'/>
+    <div className="flex flex-col w-[250px] h-[340px] justify-center shadow-lg items-center userCard gap-4 p-2 rounded-lg m-auto mt-5 ">
+      <img src={sponsor} alt="" srcset="" className='profile-img w-[120px] h-[120px]'/>
       <strong className='text-2xl'>Alok Singh</strong>
       <p className='text-lg'>Web Developer</p>
       <div className="social-icons flex flex-row gap-2">
