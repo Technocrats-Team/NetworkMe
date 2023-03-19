@@ -4,28 +4,27 @@ import { Link } from 'react-router-dom'
 const Hero = () => {
   return (
     <>
-    <div className="about">
-      <p className='pl-28 pt-32 text-4xl'>
-        Networking made easy with
-      </p>
-      <p className='pl-52 text-4xl text-indigo-400'>Network-me</p>
-      <p className='text-center mt-10 ml-24 text-xl  max-w-md'>
-      <span className='text-[#5956E9]'>Connect</span > with <span className='text-[#5956E9]'>like-minded</span> professionals and expand your <span className='text-[#5956E9]'>network</span>.
-    </p>
-      <div className='svg-position '>
-        <img src={team} alt="" className='' />
+    <div className="flex h-[100vh] justify-center items-center gap-10">
+      <div className="left mr-3">
+        <h3 className='text-center text-4xl mb-3'>Networking Made Easy with</h3>
+        <h1 className='text-center text-4xl mb-3 text-violet-500 font-semibold'>Network Me</h1>
+      <p className='text-2xl mb-10'><span className='text-[#5956E9]'>Connect</span > with <span className='text-[#5956E9]'>like-minded</span> professionals and <br /> <p className="text-center"><span className="text-center"></span> expand your <span className='text-[#5956E9]'>network</span></p></p> 
+
+      <div className="btn-row flex gap-10 justify-center">
+      <Link to="/register">
+
+        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 rounded-full w-[110px]'>
+          Host
+          </button>
+         </Link>
+          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full w-[120px]'>
+           Attendee
+          </button>
       </div>
-    <div className="  space-x-32 mt-8 mx-52">
-    <Link to="/register"> <button type="button"className="inline-block rounded bg-success px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#14a44d] transition duration-150 ease-in-out hover:bg-success-600 hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] focus:bg-success-600 focus:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] focus:outline-none focus:ring-0 active:bg-success-700 active:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)]">
-    Host
-  </button></Link>
- 
-  
-  <button type="button"
-    className="inline-block rounded bg-info px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)]">
-    Attend
-  </button>
-</div>
+      </div>
+      <div className=" ml-5 right">
+        <img src={team} alt="" className='h-[400px]' />
+      </div>
     </div>
     </>
   )

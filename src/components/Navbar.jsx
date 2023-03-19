@@ -3,7 +3,7 @@ import {Logo} from '../assets'
 const Navbar = () => {
   return (
     <>
-<div className="container mx-auto flex justify-between items-center">
+<div className="container mx-auto flex justify-between items-center h-[60px] px-3">
     <div className="flex items-center ">
       <img src={Logo} alt="My Company Logo" className="h-6 w-auto mr-4 px-2" />
       <p className='text-2xl font-bold'>Network-me</p>

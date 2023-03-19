@@ -4,9 +4,9 @@ import { innovation ,   productivity , speed ,   accesibility ,    community , s
 
 const FeaturePage = () => {
   return (
-    <div className="main h-[100vh] ">
-        <strong>Our Features</strong>
-        <div className="flex f-cardContainer justify-center items-center h-[80vh] w-[80vw] flex-wrap gap-5 m-auto">
+    <div className="main h-[100vh] text-center ">
+        <strong className=' text-3xl'>Our Features</strong>
+        <div className="flex f-cardContainer justify-center items-center h-[80vh] w-[80vw] flex-wrap gap-5 m-auto mt-6">
             <div className="f-card w-[300px] h-[300px] text-center "> 
             <img src={innovation} alt=""  className='w-[100px] h-[100px] mx-auto' />
             <h1 className='font-bold'>

@@ -3,6 +3,7 @@ import { Rectangle } from '../assets';
 import { Formik, Field, FieldArray } from 'formik';
 import {initializeApp} from 'firebase/app';
 import { getDatabase, ref, push } from "firebase/database";
+import { Link } from 'react-router-dom';
 
 
 const firebaseConfig = {
@@ -141,6 +142,9 @@ const EventRegistrationForm = () => {
               )}
             </FieldArray>
             <button type="submit" className='btn  text-black font-bold py-8 px-4 m rounded'>Submit</button>
+            <Link to="/event"><button  className='btn  text-black font-bold py-8 px-4 m rounded'>Go to event Page</button></Link>
+
+            
           </form>
         )}
       </Formik>

@@ -11,6 +11,7 @@ import accesibility from './accesibility.png'
 import social from './social.png' 
 import community from './community.png' 
 import speed from './speed.png' 
+import github from './github.png' 
 
 export {
-    random , team , images , Logo , Photo , innovation ,   productivity , speed ,   accesibility ,    community , social , Rectangle}
+    random , team , images , Logo , Photo , innovation ,   productivity , speed ,   accesibility , github,   community , social , Rectangle}
