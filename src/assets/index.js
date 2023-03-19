@@ -6,7 +6,7 @@ import Photo from './Photo.png'
 import innovation from './innovation.png' 
 import productivity from './productivity.png' 
 import Rectangle from './Rectangle.png' 
- 
+import addImage from './addImage.png' 
 import accesibility from './accesibility.png' 
 import social from './social.png' 
 import community from './community.png' 
@@ -16,4 +16,4 @@ import sponsor from './sponsor.png'
 
 
 export {
-    random , team , images , Logo , Photo , innovation ,   productivity , speed ,   accesibility , github, sponsor,  community , social , Rectangle}
+    random , team , images , Logo , Photo , innovation ,   productivity , speed ,   accesibility ,addImage, github, sponsor,  community , social , Rectangle}

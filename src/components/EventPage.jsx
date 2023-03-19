@@ -10,7 +10,7 @@ const EventPage = (props) => {
   const [ event, setEvent] = useState({});
 
   useEffect(() => {
-    axios.get('https://network-me-a73dd-default-rtdb.firebaseio.com/event/-NQrbDDOjXZM1ns7shbR.json')
+    axios.get('https://network-me-a73dd-default-rtdb.firebaseio.com/event/-NQsHTaZRUapCqa2iji2.json')
       .then(response => {
         setEvent(response.data);
       })
@@ -19,29 +19,33 @@ const EventPage = (props) => {
       });
   }, []);
 
+ 
 
 
-  return (
+  return (  
     <>
 
 
       <div className="flex justify-center">
         <div className="bg-white rounded-lg shadow-lg p-6 w-[80vw]">
           <h2 className="text-4xl font-bold mb-4">{event.eventName}</h2>
-          <p className="text-gray-600 mb-2 text-2xl">Date: September 1, 2022</p>
+          <p className="text-gray-600 mb-2 text-2xl">{event.eventDate}</p>
           
           <p className="text-gray-800 leading-relaxed text-2xl mb-4">
            {event.eventDescription}
           </p>
+
+          
           
         </div>
       </div>
       <h1 className="text-5xl text-center sponsor my-10">Sponsors</h1>
 
       <div className="flex flex-col justify-center items-center gap-5">
-         <SponsorTile />
-         <SponsorTile />
-         <SponsorTile />
+
+         {/* {event.sponsors.map((sponsor , index) => {
+          <SponsorTile key={index} name={sponsor.name} socialLink={sponsor.socialLink}/>
+         })} */}
         
       </div>
       <h1 className='text-center text-4xl my-10'>Organizer</h1>

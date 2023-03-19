@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rectangle } from '../assets';
+import { addImage} from '../assets';
 import { Formik, Field, FieldArray } from 'formik';
 import {initializeApp} from 'firebase/app';
 import { getDatabase, ref, push } from "firebase/database";
@@ -24,10 +24,20 @@ const EventRegistrationForm = () => {
     const eventsRef = ref(db, 'event');
     push(eventsRef, values); // Store the form data in the Firebase database
   };
+  const handlePhotoChange = (event) => {
+    setPhoto(event.target.files[0]);
+  };
 
   return (
     <div>
-      <img src={Rectangle} alt="" className="w-full max-w-xs mx-auto mb-8 " />
+      <button className='flex flex-col mx-auto justify-center items-center'>
+      <img src={addImage} alt="" className="w-[100px] mr-16" />
+      <input className='mx-auto'
+                type="file"
+                id="uploadPhoto"
+                name="uploadPhoto"
+                onChange={handlePhotoChange}
+              /> </button>
       <Formik
         initialValues={{
           eventName: '',
@@ -141,9 +151,10 @@ const EventRegistrationForm = () => {
                 </div>
               )}
             </FieldArray>
-            <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 align-center rounded-full w-[120px]">Submit</button>
-            <Link to="/event"><button  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full w-[120px]">Event Page</button></Link>
-
+            <div className="text-center my-10">
+            <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 align-center rounded-full w-[120px] mx-5">Submit</button>
+            <Link to="/event"><button  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full w-[120px] mx-5">Event Page</button></Link>
+            </div>
             
           </form>
         )}
